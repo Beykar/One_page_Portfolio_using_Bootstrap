@@ -1,0 +1,29 @@
+{
+  "name": "Hamid_Khaldi_BTS_Project",
+  "authors": [
+    "Beykar <hamidkhaldi@aol.com>"
+  ],
+  "description": "Bootstrap Portofolio Project",
+  "main": "index.html",
+  "keywords": [
+    "bootstrap",
+    "hamid",
+    "khaldi"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootswatch": "^3.3.7",
+    "jquery": "^3.2.1",
+    "easing": "*",
+    "normalize-css": "normalize.css#^7.0.0"
+  }
+}

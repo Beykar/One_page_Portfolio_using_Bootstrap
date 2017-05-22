@@ -1,0 +1,414 @@
+/* CSS theme/plugins  for this project are inspired by https://blackrockdigital.github.io/startbootstrap-creative/ */
+
+
+html,
+body, #wrapper {
+    height: 100%;
+    width: 100%;
+}
+.navBar {
+    font-family:"calibri", Helvetica, Arial, sans-serif;
+    font-size: large;
+    color:#FFB61E;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+h1{
+    color:white;
+    text-transform:uppercase;
+    font-family:"Calibri";
+    font-weight: bold;
+}
+
+ul li a{
+    text-transform:uppercase;
+    font-family:"Calibri";
+    font-weight: bold;
+}
+    /***************HEADER SECTION**********************/
+
+#menu{
+    background-color:rgba(255, 182, 30, .9);
+    margin-right: 0px;
+    width:100%;
+}
+
+.container{
+    width:100%;
+
+}
+
+header{
+    background-image:url("../resources/images/lit_light_bulb-wallpaper-3840x2160.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    padding: 20px 0;
+}
+
+
+.navbar-collapse{
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.navbar-right{
+    margin-right: 0;
+}
+
+
+.header-content-inner{
+    margin-top: 140px;
+    padding: 20px;
+}
+
+#innerHeader{
+    color: rgba(255, 182, 30, .9);
+}
+
+#bannerBlockQuote{
+    font-size: 1.2em;
+    color: white;
+    border-left: 4px solid rgba(207, 0, 15, .9);
+}
+
+#bannerBlockQuote footer{
+    color: white;
+}
+
+#findOutMore{
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+#findOutMore a{
+    padding:20px;
+    border-radius: 10px;
+    text-transform:uppercase;
+    font-family:"calibri";
+    font-weight: bold;
+    font-size: 1.3em;
+    color:white;
+
+}
+
+#findOutMore .btn{
+    background-color:rgba(255, 182, 30, .9);
+
+}
+#findOutMore .btn:hover{
+    background-color: rgba(207, 0, 15, .9);
+    color: rgba(255, 182, 30, .9);
+}
+/*********************MAIN SECTION********************/
+
+
+main .row{
+    color:white;
+    border-top: 1px solid #FFB61E;
+}
+
+
+main h1, main h2{
+    color:#FFB61E;
+}
+main hr{
+    border: 1px solid rgba(207, 0, 15, 1);
+}
+#aboutSec, #servicesSec, #blogSec, #contactSec, #portSec, #skills{
+    background-image: url("../resources/images/dark-bg-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+/*************************ABOUT ME*******************/
+
+#aboutSec .post{
+    position:relative;
+}
+
+#aboutPar{
+    border-right: solid 3px rgba(207, 0, 15, 1);
+}
+
+#aboutPic{
+    margin-top:50px;
+}
+
+@media (max-width: 200px) {
+    #aboutSec .container .post .more {
+        height:0;
+    }
+}
+
+
+#aboutSec .post .more {
+    height: 0;
+    opacity: 0;
+    font-size: 0;
+    line-height: 0;
+    padding-top: 10px;
+    transition: background-color ease-in-out 2s, height ease-in-out 2s, opacity ease-in-out .5s;
+}
+
+#aboutSec .post:hover .more {
+    height:auto;
+    opacity: 1;
+    font-size: inherit;
+    line-height: normal;
+    padding-top: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 182, 30, .9);
+}
+
+#aboutSec .post:hover h2{
+    color:rgba(207, 0, 15, .9);
+}
+
+
+/**************************SERVICES*********************/
+
+#servicesSec .container .post{
+    position:relative;
+}
+
+
+#servicesSec .container .post .p {
+    background-color: rgba(255, 182, 30, .6);
+    position: absolute;
+    bottom: 0;
+}
+#servicesSec .post .more{
+    opacity:0;
+    font-size: 0;
+    line-height:0;
+    padding-top: 10px;
+    transition: background-color ease-in-out 2s, height ease-in-out 2s, opacity ease-in-out .5s;
+
+
+}
+#servicesSec .post:hover .more{
+    opacity:1;
+    font-size:inherit;
+    line-height:normal;
+    padding-top: 10px;
+    background-color: rgba(255, 182, 30, .9);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+/*****************************SKILLS*********************/
+
+
+#skillsSec .container .post{
+    position:relative;
+}
+
+
+#skillsSec .container .post .p {
+    background-color: rgba(255, 182, 30, .6);
+    position: absolute;
+    bottom: 0;
+}
+#skillsSec .post .more{
+    opacity:0;
+    font-size: 0;
+    line-height:0;
+    padding-top: 10px;
+    transition: background-color ease-in-out 2s, height ease-in-out 2s, opacity ease-in-out .5s;
+
+
+}
+#skillsSec .post:hover .more{
+    opacity:1;
+    font-size:inherit;
+    line-height:normal;
+    padding-top: 10px;
+    background-color: rgba(255, 182, 30, .9);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+/********************************BLOG********************/
+#blogSec .post h2{
+    text-align: center;
+}
+
+#blogSec .container .post{
+    position:relative;
+}
+
+#blogSec .container .post .p {
+    background-color: rgba(255, 182, 30, .6);
+    position: absolute;
+    bottom: 0;
+
+}
+
+#blogSec .container .post:hover{
+    background-color: rgba(255, 182, 30, .9);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#blogSec .post .more{
+    opacity:0;
+    font-size: 0;
+    line-height:0;
+    padding-top: 10px;
+    transition: background-color ease-in-out 2s, height ease-in-out 2s, opacity ease-in-out .5s;
+
+
+}
+#blogSec .post:hover .more{
+    opacity:1;
+    font-size:inherit;
+    line-height:normal;
+    padding-top: 10px;
+}
+
+#blogSec .post .intro::after{
+    content: ' .... Read More ';
+    font-weight: bold;
+}
+
+#blogSec .post:hover .intro::after{
+    content: ' ';
+}
+#blogSec .post:hover h2{
+    color:rgba(207, 0, 15, .9);
+}
+
+
+ /**********************PORTFOLIO***********************/
+
+#portSecSec .container .post{
+    position:relative;
+}
+
+#portSec .container .post .p {
+    background-color: rgba(255, 182, 30, .6);
+    position: absolute;
+    top: 0;
+
+}
+
+#portSec .container .post:hover{
+    background-color: rgba(255, 182, 30, .9);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#portSec .post .more {
+    opacity: 0;
+    font-size: 0;
+    line-height: 0;
+    padding-top: 10px;
+    transition: background-color ease-in-out 2s, height ease-in-out 2s, opacity ease-in-out .5s;
+
+}
+
+
+#portSec .portLink{
+    background-color:rgba(207, 0, 15, .9);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#portSec .post:hover .more{
+    opacity:1;
+    font-size:inherit;
+    line-height:normal;
+    padding-top: 10px;
+}
+
+#portSec .post:hover h2{
+    color:rgba(207, 0, 15, .9);
+}
+
+/********************** CONTACT SEC **************/
+#contactSec .container .post{
+    position:relative;
+}
+
+
+#contactSec .container .post .p {
+    background-color: rgba(255, 182, 30, .9);
+    position: absolute;
+    bottom: 0;
+}
+#contactSec .post .more{
+    opacity:0;
+    font-size: 0;
+    line-height:0;
+    padding-top: 10px;
+    transition: background-color ease-in-out 2s, height ease-in-out 2s, opacity ease-in-out .5s;
+
+
+}
+#contactSec .post:hover .more{
+    opacity:1;
+    font-size:inherit;
+    line-height:normal;
+    padding-top: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#contactSec input, textarea{
+    border-radius: 5px;
+    border: solid 1px rgba(207, 0, 15, .9);
+}
+
+#contactSec label, button{
+    color: rgba(207, 0, 15, .9);
+}
+
+#contactSec button{
+    background-color:rgba(255, 182, 30, .9);
+    margin: 40px;
+    border-radius: 5px;
+    border: solid 1px rgba(255, 182, 30, .9);
+    font-weight: bold;
+}
+    /*********************FOOTER SECTION******************************/
+/*.footer{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}*/
+
+.footer a{
+    text-decoration: none;
+    color: rgba(207, 0, 15, .9);
+    font-size: 1.2em;
+}
+
+.footer .list-group-item{
+    background-color: rgba(255, 182, 30, .9);
+    border-radius: 10px;
+    border: rgba(207, 0, 15, .9);
+}
+
+.footer .list-group-item:hover{
+    background-color: white;
+}
+
+#footerSec{
+    padding-left: 60px;
+    background-color: rgba(255, 182, 30, .9);
+
+}
+
+#footerSec h3{
+    color: #CF000F ;
+    font-size: .9em;
+    font-family:calibri;
+}
