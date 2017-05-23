@@ -81,8 +81,7 @@ header{
 }
 
 #findOutMore{
-    position: relative;
-    top: 200px;
+    position:inherit;
     text-align: center;
 }
 
@@ -389,6 +388,12 @@ main hr{
 }
 
 /*********************FOOTER SECTION******************************/
+.footer{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 60px;
+}
 
 .footer a{
     text-decoration: none;
@@ -407,7 +412,6 @@ main hr{
 }
 
 #footerSec{
-    padding-left: 60px;
     background-color: rgba(255, 182, 30, .9);
 
 }
