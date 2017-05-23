@@ -346,12 +346,6 @@ main hr{
 
 /********************** CONTACT SEC **************/
 
-
-#contactBtn .container .post .p {
-    background-color: rgba(255, 182, 30, .9);
-    position: absolute;
-    bottom: 0;
-}
 #contactBtn{
     text-decoration: none;
     font-family: inherit;
@@ -367,7 +361,6 @@ main hr{
     text-align: justify;
     padding-top: 10px;
     border: transparent;
-    background-color: rgba(255, 182, 30, .9);
     border-radius: 20px;
     margin-bottom: 20px;
 }
@@ -389,7 +382,7 @@ main hr{
 
 #submitBtn{
     background-color:rgba(255, 182, 30, .9);
-    margin: 40px;
+    margin: 10px;
     border-radius: 5px;
     border: solid 1px rgba(255, 182, 30, .9);
     font-weight: bold;
