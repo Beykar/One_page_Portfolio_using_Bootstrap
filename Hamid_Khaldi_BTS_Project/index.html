@@ -13,24 +13,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!‐‐ mobile metatags ‐‐>
+    <!-- mobile metatags -->
     <meta http‐equiv="X‐UA‐Compatible" content="IE=edge">
     <meta name="viewport" content="width=device‐width, initial‐scale=1">
+    <meta name="author" content="hamid khaldi">
+    <meta name="description" content="bootstrap project">
+
     <title>HK Bootstrap Project</title>
-    <!‐‐ bootstrap code css ‐‐>
+
+    <!-- bootstrap core css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootswatch/united">
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 
     <!‐‐main custom css‐‐>
     <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 </head>
+
 <body>
     <div id="wrapper">
         <header id="home" class="container">
-            <div id="menu" class="container nav navbar-default navbar-fixed-top">
-                    <div class="row container-fluid">
-                        <div class="col-md-1 navbar-header">
+            <div id="menu" class="row nav navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
                             <button data-toggle="collapse" data-target=".navbar-collapse"
                                     class="navbar-toggle btn btn-info btn-default pull-right"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
 
@@ -43,26 +51,26 @@
                         <nav class="topNav container-fluid">
                             <div class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li class="nav-item"><a class="page-scroll" href="#home">home</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#aboutMe">about me</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#services">services</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#skills">skills</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#blog">blog</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#portSec">portfolio</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#contact">contact</a></li>
+                                    <li><a class="page-scroll" href="#home">home</a></li>
+                                    <li><a class="page-scroll" href="#aboutMe">about me</a></li>
+                                    <li><a class="page-scroll" href="#services">services</a></li>
+                                    <li><a class="page-scroll" href="#skills">skills</a></li>
+                                    <li><a class="page-scroll" href="#blog">blog</a></li>
+                                    <li><a class="page-scroll" href="#portSec">portfolio</a></li>
+                                    <li><a class="page-scroll" href="#contact">contact</a></li>
                                 </ul>
                             </div><!--/navbar-collapse-->
                     </nav><!--/topNav-->
 
 
                 </div><!--/container-fluid-->
-            </div><!--/menu-->
+            </div>/menu
 
             <div class="header-content">
                 <div class="header-content-inner">
                     <h1 id="innerHeader">Bootstrap Project</h1>
                         <blockquote id="bannerBlockQuote">
-                            This is my one-page portfolio, using Bootstrap. Enjoy!
+                            This is my one-page portfolio, using Bootstrap. Hope you like it!
                             <footer  id="bannerFooter">Hamid Khaldi</footer>
                         </blockquote>
 
@@ -76,19 +84,22 @@
 
 
         <main>
-            <div class="main container-fluid">
+            <div class="main container">
                 <div id="aboutMe" class="row">
                     <section id="aboutSec">
                         <div class="container">
                             <div class="post row">
-                                <div class="intro col-lg-8 col-lg-offset-2 text-center">
+                                <div class="col-lg-8 col-lg-offset-2 text-center">
                                     <h1 class="text-uppercase" >about me</h1>
                                     <hr>
-                                    <div class="more row col-md-offest-1 col-lg-offset-1 col-md-10 col-lg-10">
-                                        <div id="aboutPic" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                    <div class="intro">
+                                        <button type="button" id="aboutBtn"  class="btn" data-toggle="collapse" data-target="#moreAbout">more... </button>
+                                    </div><!--/intro-->
+                                    <div id= "moreAbout" class="more row collapse">
+                                        <div id="aboutPic" class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
                                             <img class="img-responsive img-thumbnail" src="resources/images/hk.jpg" alt="hamid khaldi">
                                         </div><!--aboutPic-->
-                                        <blockquote id="aboutPar" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pull-right">
+                                        <blockquote id="aboutPar" class="col-xs-10 col-sm-10 col-md-4 col-lg-4 pull-right">
                                             I'm a former IT Project Manager. I have always been interested in web development, with a particular preference
                                             for programming languages.At the end of last year, after 17 years at the same company, occupying various positions,
                                             I tendered my resignation and decided to pursue a career in Web Development. I am currently training at Training Dragon Ltd.
@@ -102,14 +113,17 @@
                     </section>
                 </div><!--/aboutMe-->
 
-                <div id="services" class="row">
-                    <section id="servicesSec">
+                <div id="services">
+                    <section id="servicesSec" class="row">
                         <div class="container">
                             <div class="post row">
-                                <div class="intro col-lg-8 col-lg-offset-2 text-center">
+                                <div class="col-lg-8 col-lg-offset-2 text-center">
                                     <h1 class="text-uppercase" >services</h1>
                                     <hr>
-                                    <div class="more row">
+                                    <div class="intro">
+                                        <button type="button"  id="servicesBtn" class="btn" data-toggle="collapse" data-target="#moreServices">more... </button>
+                                    </div><!--/intro-->
+                                    <div id="moreServices" class="more row collapse">
                                     <p class="col-md-offset-2 col-md-8 col-lg-8">I offer all around web development services, which responsive Web Design, Front End and Back-end development.
                                         I am currently self-employed, but am open to taking up one-off projects, fixed-time contracts or
                                         permanent employment, given the right circumstances.
@@ -121,14 +135,17 @@
                     </section>
                 </div><!--/services-->
 
-                <div id="skills" class="row">
-                    <section id="skillsSec" >
+                <div id="skills">
+                    <section id="skillsSec" class="row" >
                         <div class="container">
                             <div class="post row">
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
                                     <h1 class="text-uppercase" >skills</h1>
                                     <hr>
-                                    <div class="more row">
+                                    <div class="intro">
+                                        <button type="button" id="skillsBtn"  class="btn" data-toggle="collapse" data-target="#moreSkills">more... </button>
+                                    </div><!--/intro-->
+                                    <div  id="moreSkills" class="more row collapse">
                                     <p class="col-md-offset-2 col-md-8 col-lg-8">
                                         I am training in all facets of web development, with a particular preference for
                                         programming languages (both front and back end). My skills include: HTML, CSS, JS,
@@ -142,14 +159,18 @@
                     </section>
                 </div><!--/skills-->
 
-            <div id="blog" class="row">
-                <section id="blogSec" >
+            <div id="blog">
+                <section id="blogSec" class="row" >
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 col-lg-offset-2 text-center">
                                 <h1 class="text-uppercase">blog</h1>
                                 <hr>
-                                <div class="post  col-xs-12 col-sm-6 col-md-4 col-lg-4 col-lg-offset-0 text-justify">
+                                <div class="intro">
+                                    <button type="button" id="blogBtn"  class="btn" data-toggle="collapse" data-target="#moreBlog">more... </button>
+                                </div><!--/intro-->
+                                <div id="moreBlog" class="collapse more">
+                                    <div class="post  col-xs-12 col-sm-6 col-md-4 col-lg-4 col-lg-offset-0 text-justify">
                                     <h2 class="text-uppercase">Post 1</h2>
                                     <p>
                                         <span class="intro">Integer imperdiet ultrices posuere. Vivamus ac magna nec mi posuere posuere sed eu massa. Ut turpis nunc,
@@ -190,7 +211,7 @@
                                         lacus. Nunc pharetra urna id volutpat finibus. Maecenas quis sapien euismod, efficitur leo sit amet,
                                         ultricies mauris. Vestibulum vitae nunc felis.</span>
                                     </p>
-
+                            </div><!--/morePort-->
                             </div>
                                 <!--<p>click here for more</p>-->
                         </div>
@@ -200,14 +221,18 @@
             </div><!--/blog-->
 
 
-                <div id="portfolio" class="row">
-                    <section id="portSec">
+                <div id="portfolio">
+                    <section id="portSec" class="row">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
                                     <h1 class="text-uppercase">portfolio</h1>
                                     <hr>
-                                    <div class="portLink post col-xs-12 col-sm-5 col-md-3 col-lg-3 col-md-push-1 col-lg-push-1 text-justify">
+                                    <div class="intro">
+                                        <button type="button" id="portBtn"  class="btn" data-toggle="collapse" data-target="#morePort">more... </button>
+                                    </div><!--/intro-->
+                                    <div id="morePort" class="collapse more">
+                                    <div class="portLink post col-md-push-1 col-lg-push-1 col-xs-10 col-sm-5 col-md-3 col-lg-3 text-justify">
                                         <div class="intro">
                                             <h2 class="text-uppercase text-center">Project 1</h2>
                                             <h4 class="text-uppercase text-center">web design</h4>
@@ -222,7 +247,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="portLink post col-xs-12 col-sm-5 col-sm-push-1 col-md-3 col-lg-3 col-md-push-1 col-lg-push-1 text-justify">
+                                    <div class="portLink post col-md-push-1 col-lg-push-1 col-xs-10 col-sm-5 col-md-3 col-lg-3 text-justify">
                                         <div class="intro">
                                             <h2 class="text-uppercase text-center">Project 2</h2>
                                             <h4 class="text-uppercase text-center">javascript i</h4>
@@ -237,7 +262,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="portLink post col-xs-12 hidden-sm col-md-3 col-lg-3 col-md-push-1 col-lg-push-1 text-justify">
+                                    <div class="portLink post col-xs-10 hidden-sm col-md-3 col-lg-3 col-md-push-1 col-lg-push-1 text-justify">
                                         <div class="intro">
                                             <h2 class="text-uppercase text-center">Project 3</h2>
                                             <h4 class="text-uppercase text-center">javascript ii</h4>
@@ -251,7 +276,7 @@
                                             </p>
                                         </div>
                                     </div>
-                    <!--<p>click here for more</p>-->
+                                 </div><!--/morePort-->
                                 </div>
                             </div>
                         </div><!--/container-->
@@ -259,35 +284,38 @@
                 </div><!--portfolio-->
 
 
-                <div id="contact" class="row">
-                    <section id="contactSec">
+                <div id="contact">
+                    <section id="contactSec" class="row">
                         <div class="container">
                             <div class="post row">
-                                <div class="intro col-lg-8 col-lg-offset-2 text-center">
+                                <div class="col-lg-8 col-lg-offset-2 text-center">
                                     <h1 class="text-uppercase" >contact</h1>
                                     <hr>
-                                    <div class="more col-md-offest-1 col-lg-offset-1 col-md-10 col-lg-10">
-                                        <div id="nameForm" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                            <form action="#" method="post">
-                                                <label for="firstName" class="required text-uppercase">First name: </label><br>
-                                                <input type="text" name="firstname" id="firstName"><br>
-                                                <label for="lastName" class="required text-uppercase">Last name: </label> <br>
-                                                <input type="text" name="lastname" id="lastName"><br>
-                                            </form>
+                                    <div class="intro">
+                                        <button type="button" id="contactBtn"  class="btn" data-toggle="collapse" data-target="#moreContact">more... </button>
+                                    </div><!--/intro-->
+                                </div>
+                                    <div id="moreContact" class="more collapse">
+                                        <div id="nameForm" class="col-xs-push-2 col-sm-push-2 col-xs-8 col-sm-8 col-md-4 col-lg-4 col-md-push-2">
+                                                <form  action="#" method="post">
+                                                    <br><label for="firstName" class="required text-uppercase">First name: </label><br>
+                                                    <br><input type="text" name="firstname" id="firstName"><br>
+                                                    <br><label for="lastName" class="required text-uppercase">Last name: </label> <br>
+                                                    <br><input type="text" name="lastname" id="lastName"><br>
+                                                </form>
                                         </div><!--/nameForm-->
-                                        <div id="emailForm" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <form action="#" method="post">
-                                                <label for="email" class="required text-uppercase">email: </label> <br>
-                                                <input type="email" name="email" id="email"><br>
-                                                <label for="message" class="required text-uppercase">Message: </label><br>
-                                                <textarea id="message" rows="10" cols="inherit" name="message" value="message"></textarea><br>
+                                        <div id="emailForm" class="col-xs-offset-2 col-sm-offset-2 col-xs-8 col-sm-8 col-md-4 col-lg-4">
+                                                <form  action="#" method="post">
+                                                    <br><label for="email" class="required text-uppercase">email: </label> <br>
+                                                    <br><input type="email" name="email" id="email"><br>
+                                                    <br><label for="message" class="required text-uppercase">Message: </label><br>
+                                                    <br><textarea id="message" rows="10" cols="45" name="message" value="message"></textarea><br>
                                                 <div>
-                                                    <button type='submit' class="text-uppercase">Send Message</button>
+                                                    <button id="submitBtn" type='submit' class="text-uppercase">Send Message</button>
                                                 </div>
                                             </form>
                                         </div><!--/emailForm-->
                                     </div><!--/more row-->
-                                </div><!--/intro-->
                             </div><!--/post-->
                         </div><!--/container-->
                     </section>
@@ -296,12 +324,12 @@
             </div><!--/main container-->
 
         </main>
-        <footer class="container-fluid">
-            <div id="footer" class="row">
-                <section id="footerSec" class="container nav navbar-default">
-                    <div class="footer row">
-                        <h3 class="col-xs-12 col-xs-pull-1 col-sm-12 col-sm-push-1 col-md-4 col-md-push-1 col-lg-4 col-lg-push-1"><a href="http://www.beykarwebs.co.uk/">BeykarWebs</a> &copy; 2017</h3>
-                        <nav class="col-xs-12 col-sm-12 col-md-5 col-lg-5  navbar socialMedia">
+        <footer>
+            <div id="footer">
+                <section id="footerSec" class="nav navbar-default">
+                    <div class="footer">
+                        <h3 class="col-xs-pull-3 col-xs-3 col-sm-pull-3 col-sm-3 col-md-push-1 col-md-4 col-lg-push-1 col-lg-4"><a href="http://www.beykarwebs.co.uk/">BeykarWebs &copy; 2017</a></h3>
+                        <nav class="col-xs-9 col-sm-9 col-md-5 col-lg-5 col-md-push-1 col-lg-push-1  navbar socialMedia">
                             <ul class="list-inline pull-right">
                                 <li class="list-group-item"><a href="#"><img src="resources/images/social-media/facebook-letter-logo.png" alt="facebook" ></a></li>
                                 <li class="list-group-item"><a href="#"><img src="resources/images/social-media/twitter-black-shape.png" alt="twitter"></a></li>
@@ -313,16 +341,16 @@
                 </section>
             </div><!--/footerSec-->
         </footer>
-        </div><!‐‐/wrapper‐‐>
+        </div><!--/wrapper-->
     </div><!--/body container-->
-    <!‐‐ jQuery and Bootstrap JS ‐‐>
+    <!-- jQuery and Bootstrap JS -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/creative.min.js"></script>
+    <script src="js/creative.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="bower_components/jquery/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="bower_components/jquery/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
 
