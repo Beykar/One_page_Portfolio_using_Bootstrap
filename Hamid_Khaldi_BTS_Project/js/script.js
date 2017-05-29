@@ -1,5 +1,6 @@
 /**
- * Created by Hamid on 19/05/2017.
+ * @name    script.js
+ * @desc    script that handles the 'More' buttons in the sections and replaces them with 'Less' when clicked, and vice-versa.
  */
 (function(){
     var
@@ -17,7 +18,7 @@
 
         e.innerHTML = "less... ";
         e.style.fontSize = "2" + "em";
-        e.style.color = "white";
+        e.style.color = "color: rgba(51, 51, 51, 1)";
         e.style.border = "none";
         clicked = true;
     },//less
@@ -26,7 +27,7 @@
 
         e.innerHTML = "more... ";
         e.style.fontSize = "2" + "em";
-        e.style.color = "white";
+        e.style.color = "color: rgba(51, 51, 51, 1)";
         e.style.border = "none";
         clicked = false;
     },//more
@@ -83,13 +84,36 @@
         });
     },//bindBtn
 
-        init    =   function(){
+        arrowUp = function () {
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollToTop').fadeIn();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                }
+            });
 
+            //Click event to scroll to top
+            $('.scrollToTop').click(function(e){
+                e.preventDefault();
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+
+        },//arrowUp
+
+        init    =   function(){
+        arrowUp();
 
         bindBtn();
+
+
 
     }//init
 
     ;
+
+
     window.addEventListener("load", init);
 })();

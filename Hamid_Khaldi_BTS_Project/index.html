@@ -19,18 +19,14 @@
     <meta name="author" content="hamid khaldi">
     <meta name="description" content="bootstrap project">
 
-    <title>HK Bootstrap Project</title>
+    <title>BW Bootstrap Project</title>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/images/icon-3.ico" />
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/bootswatch/united">
-    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
-
-    <!‐‐main custom css‐‐>
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
 </head>
 
 <body>
@@ -40,10 +36,10 @@
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button data-toggle="collapse" data-target=".navbar-collapse"
-                                    class="navbar-toggle btn btn-info btn-default pull-right"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+                                    class="navbar-toggle btn btn-info btn-default"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
 
                             <div id="logo">
-                                <h4><a href="http://www.beykarwebs.co.uk/"><img src="resources/images/beykarwebs_logo.png" alt="beykarwebs logo" width="141" height="33"></a></h4>
+                                <h4><a href="http://www.beykarwebs.co.uk/"><img src="resources/images/white-logo.png" alt="beykarwebs logo" width="141" height="33"></a></h4>
                             </div><!--/logo-->
                         </div><!--/navbar header-->
 
@@ -64,22 +60,21 @@
 
 
                 </div><!--/container-fluid-->
-            </div>/menu
+            </div><!--/menu-->
 
             <div class="header-content">
                 <div class="header-content-inner">
                     <h1 id="innerHeader">Bootstrap Project</h1>
                         <blockquote id="bannerBlockQuote">
-                            This is my one-page portfolio, using Bootstrap. Hope you like it!
+                            <span class="quoteMarks">"</span>Welcome: This is a one page, personal portfolio using Bootstrap...
                             <footer  id="bannerFooter">Hamid Khaldi</footer>
                         </blockquote>
 
-                </div>
+                </div><!--/header-content-inner-->
                 <div id="findOutMore" class="row">
-                    <a href="#aboutMe" class="col-md-offset-7 col-lg-offset-7 btn btn-xl page-scroll hidden-sm hidden-xs">learn more</a>
+                    <a href="#aboutMe" class="btn btn-xl page-scroll">learn more</a>
                 </div>
-            </div>
-
+            </div><!--/header-content-->
         </header>
 
 
@@ -90,9 +85,10 @@
                         <div class="container">
                             <div class="post row">
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <h1 class="text-uppercase" >about me</h1>
+                                    <h2 class="text-uppercase">about me</h2>
                                     <hr>
                                     <div class="intro">
+                                        <p>  </p>
                                         <button type="button" id="aboutBtn"  class="btn" data-toggle="collapse" data-target="#moreAbout">more... </button>
                                     </div><!--/intro-->
                                     <div id= "moreAbout" class="more row collapse">
@@ -100,8 +96,8 @@
                                             <img class="img-responsive img-thumbnail" src="resources/images/hk.jpg" alt="hamid khaldi">
                                         </div><!--aboutPic-->
                                         <blockquote id="aboutPar" class="col-xs-10 col-sm-10 col-md-4 col-lg-4 pull-right">
-                                            I'm a former IT Project Manager. I have always been interested in web development, with a particular preference
-                                            for programming languages.At the end of last year, after 17 years at the same company, occupying various positions,
+                                            " I'm a former IT Project Manager. I have always been interested in web development, with a particular preference
+                                            for programming languages. At the end of last year, after 17 years at the same company, occupying various positions,
                                             I tendered my resignation and decided to pursue a career in Web Development. I am currently training at Training Dragon Ltd.
                                             The Career Programme is challenging, but highly enjoyable...
                                             <footer>Hamid K.</footer>
@@ -118,7 +114,7 @@
                         <div class="container">
                             <div class="post row">
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <h1 class="text-uppercase" >services</h1>
+                                    <h2 class="text-uppercase" >services</h2>
                                     <hr>
                                     <div class="intro">
                                         <button type="button"  id="servicesBtn" class="btn" data-toggle="collapse" data-target="#moreServices">more... </button>
@@ -140,7 +136,7 @@
                         <div class="container">
                             <div class="post row">
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <h1 class="text-uppercase" >skills</h1>
+                                    <h2 class="text-uppercase" >skills</h2>
                                     <hr>
                                     <div class="intro">
                                         <button type="button" id="skillsBtn"  class="btn" data-toggle="collapse" data-target="#moreSkills">more... </button>
@@ -164,14 +160,14 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 col-lg-offset-2 text-center">
-                                <h1 class="text-uppercase">blog</h1>
+                                <h2 class="text-uppercase">blog</h2>
                                 <hr>
                                 <div class="intro">
                                     <button type="button" id="blogBtn"  class="btn" data-toggle="collapse" data-target="#moreBlog">more... </button>
                                 </div><!--/intro-->
                                 <div id="moreBlog" class="collapse more">
                                     <div class="post  col-xs-12 col-sm-3 col-md-4 col-lg-4 col-lg-offset-0 text-justify">
-                                    <h2 class="text-uppercase">Post 1</h2>
+                                    <h3 class="text-uppercase">Post 1</h3>
                                     <p>
                                         <span class="intro">Integer imperdiet ultrices posuere. Vivamus ac magna nec mi posuere posuere sed eu massa. Ut turpis nunc,
                                         cursus sed mi eu, fermentum egestas tellus. Maecenas vestibulum</span>
@@ -185,7 +181,7 @@
                                     </p>
                                 </div>
                                 <div class="post col-xs-12 col-sm-3 col-md-4 col-lg-4 text-justify">
-                                    <h2 class="text-uppercase">Post 2</h2>
+                                    <h3 class="text-uppercase">Post 2</h3>
                                     <p>
                                         <span class="intro">Integer imperdiet ultrices posuere. Vivamus ac magna nec mi posuere posuere sed eu massa. Ut turpis nunc,
                                         cursus sed mi eu, fermentum egestas tellus. Maecenas vestibulum</span>
@@ -199,7 +195,7 @@
                                     </p>
                                 </div>
                                 <div class="post col-xs-12 col-sm-3 col-md-4 col-lg-4 text-justify">
-                                    <h2 class="text-uppercase">Post 3</h2>
+                                    <h3 class="text-uppercase">Post 3</h3>
                                     <p>
                                         <span class="intro">Integer imperdiet ultrices posuere. Vivamus ac magna nec mi posuere posuere sed eu massa. Ut turpis nunc,
                                         cursus sed mi eu, fermentum egestas tellus. Maecenas vestibulum</span>
@@ -226,7 +222,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <h1 class="text-uppercase">portfolio</h1>
+                                    <h2 class="text-uppercase">portfolio</h2>
                                     <hr>
                                     <div class="intro">
                                         <button type="button" id="portBtn"  class="btn" data-toggle="collapse" data-target="#morePort">more... </button>
@@ -234,14 +230,14 @@
                                     <div id="morePort" class="collapse more">
                                     <div class="portLink post col-md-push-1 col-lg-push-1 col-xs-10 col-sm-3 col-md-3 col-lg-3 text-justify">
                                         <div class="intro">
-                                            <h2 class="text-uppercase text-center">Project 1</h2>
+                                            <h3 class="text-uppercase text-center">Project 1</h3>
                                             <h4 class="text-uppercase text-center">web design</h4>
                                         </div>
                                         <div class="more">
                                             <p>
                                                 Simple web design project which makes use of  basic <span class="text-uppercase">html & css</span> concepts.
                                                 <a href="http://beykarwebs.co.uk/Git_Hamid_Khaldi_Demo_Blog_Proposal/index.html">
-                                                    <span class="glyphicon glyphicon-link" style="color:rgba(207, 0, 15, .9)"></span>
+                                                    <span class="glyphicon glyphicon-link"></span>
                                                 </a>
                                             </p>
                                         </div>
@@ -249,14 +245,14 @@
                                     </div>
                                     <div class="portLink post col-md-push-1 col-lg-push-1 col-xs-10 col-sm-offset-1 col-sm-3 col-md-3 col-lg-3 text-justify">
                                         <div class="intro">
-                                            <h2 class="text-uppercase text-center">Project 2</h2>
+                                            <h3 class="text-uppercase text-center">Project 2</h3>
                                             <h4 class="text-uppercase text-center">javascript i</h4>
                                         </div>
                                         <div class="more">
                                             <p>
                                                 Simple JavaScript exercise which calculates the price of a ticket depending on destination and luggage options.
                                                 <a href="http://beykarwebs.co.uk/flight-calculator-hk/index.html">
-                                                    <span class="glyphicon glyphicon-link" style="color:rgba(207, 0, 15, .9)" ></span>
+                                                    <span class="glyphicon glyphicon-link"></span>
                                                 </a>
                                             </p>
                                         </div>
@@ -264,14 +260,14 @@
                                     </div>
                                     <div class="portLink post col-xs-10 col-sm-3 col-md-3 col-lg-3 col-md-push-1 col-lg-push-1 text-justify">
                                         <div class="intro">
-                                            <h2 class="text-uppercase text-center">Project 3</h2>
+                                            <h3 class="text-uppercase text-center">Project 3</h3>
                                             <h4 class="text-uppercase text-center">javascript ii</h4>
                                         </div>
                                         <div class="more">
                                             <p>
                                                 JavaScript project using walking sprites, stop & start buttons, using arrays and objects.
                                                     <a href="http://beykarwebs.co.uk/walking_project/index.html">
-                                                        <span class="glyphicon glyphicon-link" style="color:rgba(207, 0, 15, .9)"></span>
+                                                        <span class="glyphicon glyphicon-link"></span>
                                                    </a>
                                             </p>
                                         </div>
@@ -288,7 +284,7 @@
                         <div class="container">
                             <div class="post row">
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                                    <h1 class="text-uppercase" >contact</h1>
+                                    <h2 class="text-uppercase" >contact</h2>
                                     <hr>
                                     <div class="intro">
                                         <button type="button" id="contactBtn"  class="btn" data-toggle="collapse" data-target="#moreContact">more... </button>
@@ -329,11 +325,11 @@
                     <div class="footer">
                         <h3><a href="http://www.beykarwebs.co.uk/">BeykarWebs &copy; 2017</a></h3>
                         <nav class="navbar socialMedia">
-                            <ul class="list-inline ">
-                                <li class="list-group-item"><a href="#"><img src="resources/images/social-media/facebook-letter-logo.png" alt="facebook" ></a></li>
-                                <li class="list-group-item"><a href="#"><img src="resources/images/social-media/twitter-black-shape.png" alt="twitter"></a></li>
-                                <li class="list-group-item"><a href="#"><img src="resources/images/social-media/wordpress%20(1).png" alt="wordpress"></a></li>
-                                <li class="list-group-item"><a href="#"><img src="resources/images/social-media/instagram-logo.png" alt="github"></a></li>
+                            <ul class="list-inline">
+                                <li class="list-group-item"><a href="#"><img src="resources/images/social-media/white-sm/facebook-letter-logo%20(1).png" alt="facebook" ></a></li>
+                                <li class="list-group-item"><a href="#"><img src="resources/images/social-media/white-sm/twitter-logo-silhouette.png" alt="twitter"></a></li>
+                                <li class="list-group-item"><a href="#"><img src="resources/images/social-media/white-sm/wordpress-white.png" alt="wordpress"></a></li>
+                                <li class="list-group-item"><a href="#"><img src="resources/images/social-media/white-sm/github-logo.png" alt="github"></a></li>
                             </ul>
                         </nav><!--/socialMedia nav-->
                     </div><!--/footer row-->
@@ -342,15 +338,16 @@
         </footer>
         </div><!--/wrapper-->
     </div><!--/body container-->
+    <a href="#" class="scrollToTop"></a>
     <!-- jQuery and Bootstrap JS -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/creative.js"></script>
+
 
     <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="bower_components/jquery/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
+    <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="js/creative.js"></script>
     <script src="js/script.js"></script>
 
 </body>
