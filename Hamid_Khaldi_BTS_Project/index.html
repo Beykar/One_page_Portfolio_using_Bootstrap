@@ -36,10 +36,16 @@
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button data-toggle="collapse" data-target=".navbar-collapse"
-                                    class="navbar-toggle btn btn-info btn-default"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+                                    class="navbar-toggle btn btn-info btn-default pull-right"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
 
                             <div id="logo">
-                                <h4><a href="http://www.beykarwebs.co.uk/"><img src="resources/images/white-logo.png" alt="beykarwebs logo" width="141" height="33"></a></h4>
+                                <div id="logoLg">
+                                    <h4><a href="http://www.beykarwebs.co.uk/"><img src="resources/images/white-logo.png" alt="beykarwebs logo" width="141" height="33"></a></h4>
+                                </div>
+                                <div id="logoSm">
+                                    <h4><a href="http://www.beykarwebs.co.uk/"><img src="resources/images/bw_white_logo.png" alt="beykarwebs logo" width="50" height="30"></a></h4>
+                                </div>
+
                             </div><!--/logo-->
                         </div><!--/navbar header-->
 
@@ -47,13 +53,13 @@
                         <nav class="topNav container-fluid">
                             <div class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a class="page-scroll" href="#home">home</a></li>
-                                    <li><a class="page-scroll" href="#aboutMe">about me</a></li>
-                                    <li><a class="page-scroll" href="#services">services</a></li>
-                                    <li><a class="page-scroll" href="#skills">skills</a></li>
-                                    <li><a class="page-scroll" href="#blog">blog</a></li>
-                                    <li><a class="page-scroll" href="#portSec">portfolio</a></li>
-                                    <li><a class="page-scroll" href="#contact">contact</a></li>
+                                    <li class=""><a class="page-scroll" href="#home">home</a></li>
+                                    <li class=""><a class="page-scroll" href="#aboutMe">about me</a></li>
+                                    <li class=""><a class="page-scroll" href="#services">services</a></li>
+                                    <li class=""><a class="page-scroll" href="#skills">skills</a></li>
+                                    <li class=""><a class="page-scroll" href="#blog">blog</a></li>
+                                    <li class=""><a class="page-scroll" href="#portSec">portfolio</a></li>
+                                    <li class=""><a class="page-scroll" href="#contact">contact</a></li>
                                 </ul>
                             </div><!--/navbar-collapse-->
                     </nav><!--/topNav-->
@@ -80,29 +86,32 @@
 
         <main>
             <div class="main container">
-                <div id="aboutMe" class="row">
-                    <section id="aboutSec">
+                <div id="aboutMe">
+                    <section id="aboutSec" class="row">
                         <div class="container">
                             <div class="post row">
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
                                     <h2 class="text-uppercase">about me</h2>
                                     <hr>
-                                    <div class="intro">
-                                        <p>  </p>
+                                   <!-- <div class="intro">
                                         <button type="button" id="aboutBtn"  class="btn" data-toggle="collapse" data-target="#moreAbout">more... </button>
-                                    </div><!--/intro-->
-                                    <div id= "moreAbout" class="more row collapse">
-                                        <div id="aboutPic" class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
-                                            <img class="img-responsive img-thumbnail" src="resources/images/hk.jpg" alt="hamid khaldi">
+                                    </div>/intro-->
+                                    <div id= "moreAbout" class="row">
+                                        <div class="col-xs-10 col-sm-10 col-md-3 col-lg-3">
+                                            <img id="aboutPic" class="img-responsive img-thumbnail" src="resources/images/hk.jpg" alt="hamid khaldi">
                                         </div><!--aboutPic-->
-                                        <blockquote id="aboutPar" class="col-xs-10 col-sm-10 col-md-4 col-lg-4 pull-right">
+                                        <div id="aboutPar" class="col-xs-10 col-sm-10 col-md-8 col-lg-8 pull-right">
                                             " I'm a former IT Project Manager. I have always been interested in web development, with a particular preference
-                                            for programming languages. At the end of last year, after 17 years at the same company, occupying various positions,
-                                            I tendered my resignation and decided to pursue a career in Web Development. I am currently training at Training Dragon Ltd.
-                                            The Career Programme is challenging, but highly enjoyable...
-                                            <footer>Hamid K.</footer>
-                                        </blockquote>
+                                            for programming languages.
+                                            <div id="aboutSpan">
+                                                At the end of last year, and after 17 years at the same company, occupying various positions,
+                                                I tendered my resignation and decided to pursue a career in Web Development. I am currently training at Training Dragon Ltd.
+                                                The Career Programme is challenging, but highly enjoyable...
+                                                <footer>Hamid K.</footer>
+                                            </div><!--/aboutSpan-->
+                                        </div><!--/aboutPar-->
                                     </div><!--/more row-->
+                                    <button id="aboutBtn" class="btn col-xs-12 col-sm-12 col-md-2 pull-right">more... </button>
                                 </div>
                             </div>
                         </div>
@@ -116,39 +125,50 @@
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
                                     <h2 class="text-uppercase" >services</h2>
                                     <hr>
-                                    <div class="intro">
-                                        <button type="button"  id="servicesBtn" class="btn" data-toggle="collapse" data-target="#moreServices">more... </button>
-                                    </div><!--/intro-->
-                                    <div id="moreServices" class="more row collapse">
-                                    <p class="col-md-offset-2 col-md-8 col-lg-8">I offer all around web development services, which responsive Web Design, Front End and Back-end development.
-                                        I am currently self-employed, but am open to taking up one-off projects, fixed-time contracts or
-                                        permanent employment, given the right circumstances.
-                                    </p>
+                                    <div class="more row">
+                                        <p class="col-md-offset-2 col-md-8 col-lg-8">
+                                            I offer all around web development services, which responsive Web Design, Front End and Back-end development.
+                                        </p>
+                                    </div>
+                                    <div  id="moreServices" class="more row collapse">
+                                        <p class="col-md-offset-2 col-md-8 col-lg-8">
+                                            I am currently self-employed, but am open to taking up one-off projects, fixed-time contracts or
+                                            permanent employment, given the right circumstances.
+                                        </p>
                                     </div><!--/more row-->
-                                </div>
+                                    <div class="intro">
+                                        <button type="button"  id="servicesBtn" class="btn col-xs-12 col-sm-12 col-md-2 pull-right" data-toggle="collapse" data-target="#moreServices">more... </button>
+                                    </div><!--/intro-->
+                               <!--/more row collapse-->
                             </div>
                         </div>
+                        </div><!--container-->
                     </section>
                 </div><!--/services-->
 
                 <div id="skills">
-                    <section id="skillsSec" class="row" >
+                    <section id="skillsSec" class="row">
                         <div class="container">
                             <div class="post row">
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
                                     <h2 class="text-uppercase" >skills</h2>
                                     <hr>
-                                    <div class="intro">
-                                        <button type="button" id="skillsBtn"  class="btn" data-toggle="collapse" data-target="#moreSkills">more... </button>
-                                    </div><!--/intro-->
+
+                                    <div class="more row">
+                                       <p class="col-md-offset-2 col-md-8 col-lg-8">
+                                            I am training in all facets of web development, with a particular preference for
+                                            programming languages (both front and back end).
+                                       </p>
+                                    </div>
                                     <div  id="moreSkills" class="more row collapse">
                                     <p class="col-md-offset-2 col-md-8 col-lg-8">
-                                        I am training in all facets of web development, with a particular preference for
-                                        programming languages (both front and back end). My skills include: HTML, CSS, JS,
-                                        PHP, MYSQL, WordPress. I also have experience in project management, so would be prepared to
-                                        eventually lead a team through a project.
+                                        My skills include: HTML, CSS, JS, PHP, MYSQL, WordPress. I also have experience in project management,
+                                        so would be prepared to eventually lead a team through a project.
                                     </p>
                                     </div><!--/more row-->
+                                    <div class="intro">
+                                        <button type="button" id="skillsBtn"  class="btn col-xs-12 col-sm-12 col-md-2 pull-right" data-toggle="collapse" data-target="#moreSkills">more... </button>
+                                    </div><!--/intro-->
                                 </div><!--/-->
                             </div>
                         </div>
@@ -162,16 +182,14 @@
                             <div class="col-lg-8 col-lg-offset-2 text-center">
                                 <h2 class="text-uppercase">blog</h2>
                                 <hr>
-                                <div class="intro">
-                                    <button type="button" id="blogBtn"  class="btn" data-toggle="collapse" data-target="#moreBlog">more... </button>
-                                </div><!--/intro-->
                                 <div id="moreBlog" class="collapse more">
                                     <div class="post  col-xs-12 col-sm-3 col-md-4 col-lg-4 col-lg-offset-0 text-justify">
                                     <h3 class="text-uppercase">Post 1</h3>
                                     <p>
                                         <span class="intro">Integer imperdiet ultrices posuere. Vivamus ac magna nec mi posuere posuere sed eu massa. Ut turpis nunc,
-                                        cursus sed mi eu, fermentum egestas tellus. Maecenas vestibulum</span>
-                                        <span class="more">ium massa dolor eu odio. Maecenas aliquet lobortis elit, ut scelerisque mauris.
+                                        cursus sed mi eu, fermentum egestas tellus. Maecenas vestibulum
+                                        </span>
+                                        <span class="spanToggle more">ium massa dolor eu odio. Maecenas aliquet lobortis elit, ut scelerisque mauris.
                                         Integer blandit magna eget nisi tincidunt, a ultricies arcu porttitor. Quisque vel orci tempor,
                                         commodo ex vel, iaculis ex. Duis faucibus nulla ut quam feugiat ornare. Integer est eros, scelerisque
                                         ac bibendum quis, dictum in turpis. Nam pretium vehicula enim, non luctus mi ornare ut. Duis finibus
@@ -179,6 +197,7 @@
                                         lacus. Nunc pharetra urna id volutpat finibus. Maecenas quis sapien euismod, efficitur leo sit amet,
                                         ultricies mauris. Vestibulum vitae nunc felis.</span>
                                     </p>
+                                        <button class="readMore">read more... </button>
                                 </div>
                                 <div class="post col-xs-12 col-sm-3 col-md-4 col-lg-4 text-justify">
                                     <h3 class="text-uppercase">Post 2</h3>
@@ -210,8 +229,14 @@
                             </div><!--/morePort-->
                             </div>
                                 <!--<p>click here for more</p>-->
-                        </div>
-                    </div>
+                                <div class="intro">
+                                    <button type="button" id="blogBtn"  class="btn col-xs-12 col-sm-12 col-md-2 pull-right" data-toggle="collapse" data-target="#moreBlog">more... </button>
+                                </div><!--/intro-->
+
+                            </div>
+
+                        </div><!--/row-->
+
                   </div><!--/container-->
                 </section>
             </div><!--/blog-->
@@ -224,9 +249,6 @@
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
                                     <h2 class="text-uppercase">portfolio</h2>
                                     <hr>
-                                    <div class="intro">
-                                        <button type="button" id="portBtn"  class="btn" data-toggle="collapse" data-target="#morePort">more... </button>
-                                    </div><!--/intro-->
                                     <div id="morePort" class="collapse more">
                                     <div class="portLink post col-md-push-1 col-lg-push-1 col-xs-10 col-sm-3 col-md-3 col-lg-3 text-justify">
                                         <div class="intro">
@@ -273,6 +295,9 @@
                                         </div>
                                     </div>
                                  </div><!--/morePort-->
+                                    <div class="intro">
+                                        <button type="button" id="portBtn"  class="btn col-xs-12 col-sm-12 col-md-2 pull-right" data-toggle="collapse" data-target="#morePort">more... </button>
+                                    </div><!--/intro-->
                                 </div>
                             </div>
                         </div><!--/container-->
@@ -286,11 +311,13 @@
                                 <div class="col-lg-8 col-lg-offset-2 text-center">
                                     <h2 class="text-uppercase" >contact</h2>
                                     <hr>
-                                    <div class="intro">
-                                        <button type="button" id="contactBtn"  class="btn" data-toggle="collapse" data-target="#moreContact">more... </button>
-                                    </div><!--/intro-->
+                                    <div class="more row">
+                                        <p class="col-md-offset-2 col-md-8 col-lg-8">
+                                           To get in touch, just complete the form below...
+                                        </p>
+                                    </div>
                                     <div  id="moreContact" class="more row collapse">
-                                        <div id="nameForm" class="col-xs-push-2 col-sm-push-2 col-xs-8 col-sm-8 col-md-4 col-lg-4 col-md-push-2">
+                                        <div id="nameForm" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                             <form  action="#" method="post">
                                                 <br><label for="firstName" class="required text-uppercase">First name: </label><br>
                                                 <br><input type="text" name="firstname" id="firstName"><br>
@@ -298,7 +325,7 @@
                                                 <br><input type="text" name="lastname" id="lastName"><br>
                                             </form>
                                         </div><!--/nameForm-->
-                                        <div id="emailForm" class="col-xs-offset-2 col-sm-offset-2 col-xs-8 col-sm-8 col-md-4 col-lg-4">
+                                        <div id="emailForm" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                             <form  action="#" method="post">
                                                 <br><label for="email" class="required text-uppercase">email: </label> <br>
                                                 <br><input type="email" name="email" id="email"><br>
@@ -310,9 +337,13 @@
                                             </form>
                                         </div><!--/emailForm-->
                                     </div><!--/moreContact-->
+                                    <div class="intro">
+                                        <button type="button" id="contactBtn"  class="btn col-xs-12 col-sm-12 col-md-2 pull-right" data-toggle="collapse" data-target="#moreContact">more... </button>
+                                    </div><!--/intro-->
                                 </div><!--/-->
-                            </div><!--/container-->
-                        </div>
+
+                            </div><!--/row-->
+                        </div><!--/container-->
                     </section>
                 </div><!--/contact-->
 

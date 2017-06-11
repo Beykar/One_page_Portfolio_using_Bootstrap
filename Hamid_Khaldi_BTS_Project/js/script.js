@@ -5,13 +5,19 @@
 (function(){
     var
 
-    aboutBtn                =   document.getElementById("aboutBtn"),
+
     servicesBtn             =   document.getElementById("servicesBtn"),
     skillsBtn               =   document.getElementById("skillsBtn"),
     blogBtn                 =   document.getElementById("blogBtn"),
     portBtn                 =   document.getElementById("portBtn"),
     contactBtn              =   document.getElementById("contactBtn"),
     clicked                 =   false,
+    $aboutPic               =   $("#aboutPic"),
+    $aboutBtn               =   $("#aboutBtn"),
+    $aboutSpan              =  $("#aboutSpan"),
+
+
+
 
 
     less                    =   function(e){
@@ -35,15 +41,7 @@
 
     bindBtn =   function(){
 
-        aboutBtn.addEventListener("click", function () {
-                if (clicked === false) {
-                    less(aboutBtn);
-                } else {
-                    more(aboutBtn);
-                }
-            });
-
-        servicesBtn.addEventListener("click", function () {
+       servicesBtn.addEventListener("click", function () {
             if (clicked === false) {
                 less(servicesBtn);
             } else {
@@ -82,6 +80,23 @@
                 more(contactBtn);
             }
         });
+
+        $aboutBtn.click(function(){
+                $aboutSpan
+                    .slideToggle("slow")
+                    .toggleClass("visible");
+                    if ( $aboutSpan.hasClass("visible") ){
+                        $aboutPic.fadeTo("fast",1);
+                        $aboutBtn.html("less... ")
+
+                    } else {
+                        $aboutPic.fadeTo("fast", .2);
+                        $aboutBtn.html("more... ")
+                    }
+            console.log($aboutSpan.hasClass("visible"));
+            });//slideToggle for the blog section
+
+
     },//bindBtn
 
         arrowUp = function () {
