@@ -6,96 +6,142 @@
     var
 
 
-    servicesBtn             =   document.getElementById("servicesBtn"),
-    skillsBtn               =   document.getElementById("skillsBtn"),
-    blogBtn                 =   document.getElementById("blogBtn"),
-    portBtn                 =   document.getElementById("portBtn"),
-    contactBtn              =   document.getElementById("contactBtn"),
-    clicked                 =   false,
     $aboutPic               =   $("#aboutPic"),
     $aboutBtn               =   $("#aboutBtn"),
-    $aboutSpan              =  $("#aboutSpan"),
+    $aboutSpan              =   $("#aboutSpan"),
+    $servicesBtn            =   $("#servicesBtn"),
+    $moreServices           =   $("#moreServices"),
+    $skillsBtn              =   $("#skillsBtn"),
+    $moreSkills             =   $("#moreSkills"),
+    $blogBtn                =   $("#blogBtn"),
+    $moreBlog               =   $("#moreBlog"),
+    $readMore1              =   $("#readMore1"),
+    $morePost1              =   $("#morePost1"),
+    $readMore2              =   $("#readMore2"),
+    $morePost2              =   $("#morePost2"),
+    $readMore3              =   $("#readMore3"),
+    $morePost3              =   $("#morePost3"),
+    $portBtn                =   $("#portBtn"),
+    $morePort               =   $("#morePort"),
+    $contactBtn             =   $("#contactBtn"),
+    $moreContact            =   $("#moreContact"),
 
+    bindBtns =   function(){
 
+        $aboutBtn.click(function () {
+            $aboutSpan
+                .slideToggle("slow")
+                .toggleClass("visible");
+            $aboutPic.fadeTo("fast", 1);
 
+            if ($aboutSpan.hasClass("visible")) {
+                $aboutBtn.html("less... ");
 
-
-    less                    =   function(e){
-
-        e.innerHTML = "less... ";
-        e.style.fontSize = "2" + "em";
-        e.style.color = "color: rgba(51, 51, 51, 1)";
-        e.style.border = "none";
-        clicked = true;
-    },//less
-
-    more                    =   function(e){
-
-        e.innerHTML = "more... ";
-        e.style.fontSize = "2" + "em";
-        e.style.color = "color: rgba(51, 51, 51, 1)";
-        e.style.border = "none";
-        clicked = false;
-    },//more
-
-
-    bindBtn =   function(){
-
-       servicesBtn.addEventListener("click", function () {
-            if (clicked === false) {
-                less(servicesBtn);
             } else {
-                more(servicesBtn);
+                $aboutPic.fadeTo("fast", 0.2);
+                $aboutBtn.html("more... ");
             }
+
+        });
+        $skillsBtn.click(function () {
+            $moreSkills
+                .slideToggle("slow")
+                .toggleClass("visible");
+
+            if ($moreSkills.hasClass("visible")) {
+                $skillsBtn.html("less... ");
+            } else {
+                $skillsBtn.html("more... ");
+            }
+
+        });
+        $servicesBtn.click(function () {
+            $moreServices
+                .slideToggle("slow")
+                .toggleClass("visible");
+
+            if ($moreServices.hasClass("visible")) {
+                $servicesBtn.html("less... ");
+            } else {
+                $servicesBtn.html("more... ");
+            }
+
+        });
+        $blogBtn.click(function () {
+            $moreBlog
+                .slideToggle("slow")
+                .toggleClass("visible");
+
+            if ($moreBlog.hasClass("visible")) {
+                $blogBtn.html("less... ");
+            } else {
+                $blogBtn.html("more... ");
+            }
+
+        });
+        $readMore1.click(function () {
+            $morePost1
+                .slideToggle("slow")
+                .toggleClass("visible");
+
+            if ($morePost1.hasClass("visible")) {
+                $readMore1.html("read less... ");
+            } else {
+                $readMore1.html("read more... ");
+            }
+
+        });
+        $readMore2.click(function () {
+            $morePost2
+                .slideToggle("slow")
+                .toggleClass("visible");
+
+            if ($morePost2.hasClass("visible")) {
+                $readMore2.html("read less... ");
+            } else {
+                $readMore2.html("read more... ");
+            }
+
         });
 
-        skillsBtn.addEventListener("click", function () {
-            if (clicked === false) {
-               less(skillsBtn);
+        $readMore3.click(function () {
+            $morePost3
+                .slideToggle("slow")
+                .toggleClass("visible");
+
+            if ($morePost3.hasClass("visible")) {
+                $readMore3.html("read less... ");
             } else {
-                more(skillsBtn);
+                $readMore3.html("read more... ");
             }
+
         });
 
-        blogBtn.addEventListener("click", function () {
-            if (clicked === false) {
-                less(blogBtn);
+
+        $portBtn.click(function () {
+            $morePort
+                .slideToggle("slow")
+                .toggleClass("visible");
+
+            if ($morePort.hasClass("visible")) {
+                $portBtn.html("less... ");
             } else {
-                more(blogBtn);
+                $portBtn.html("more... ");
             }
-        });
 
-        portBtn.addEventListener("click", function () {
-            if (clicked === false) {
-                less(portBtn);
+        });
+        $contactBtn.click(function () {
+            $moreContact
+                .slideToggle("slow")
+                .toggleClass("visible");
+
+            if ($moreContact.hasClass("visible")) {
+                $contactBtn.html("less... ");
             } else {
-                more(portBtn);
+                $contactBtn.html("more... ");
             }
+
         });
-
-        contactBtn.addEventListener("click", function () {
-            if (clicked === false) {
-                    less(contactBtn);
-            } else {
-                more(contactBtn);
-            }
-        });
-
-        $aboutBtn.click(function(){
-                $aboutSpan
-                    .slideToggle("slow")
-                    .toggleClass("visible");
-                    if ( $aboutSpan.hasClass("visible") ){
-                        $aboutPic.fadeTo("fast",1);
-                        $aboutBtn.html("less... ")
-
-                    } else {
-                        $aboutPic.fadeTo("fast", .2);
-                        $aboutBtn.html("more... ")
-                    }
-            console.log($aboutSpan.hasClass("visible"));
-            });//slideToggle for the blog section
-
 
     },//bindBtn
 
@@ -118,12 +164,11 @@
 
         },//arrowUp
 
+
         init    =   function(){
-        arrowUp();
 
-        bindBtn();
-
-
+            bindBtns();
+            arrowUp();
 
     }//init
 

@@ -387,7 +387,7 @@ display: none;
 
 
 
-#blogBtn, .readMore{
+#blogBtn{
     text-decoration: none;
     font-family: inherit;
     font-size: 2em;
@@ -397,6 +397,17 @@ display: none;
     color:rgba(25, 181, 254, 1);
 }
 
+#readMore1, #readMore2, #readMore3{
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-left: -5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color:rgba(25, 181, 254, 1);
+}
 
 
 #blogSec .container .post .p {
@@ -407,22 +418,10 @@ display: none;
 }
 
 
-/*
-#blogSec .post:hover{
-    background-color:rgba(34, 34, 34, .1);
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-*/
 
-#blogSec .post .more{
-    opacity:0;
-    font-size: 0;
-    line-height:0;
-    padding-top: 10px;
-    transition: background-color ease-in-out 2s, height ease-in-out 2s, opacity ease-in-out .5s;
-
-
+#morePost1, #morePost2, #morePost3{
+    color:rgba(25, 181, 254, 1);
+    display: none;
 }
 
 #blogSec .post .intro{
@@ -430,7 +429,15 @@ display: none;
 }
 
 
-
+#blogSec .container .row .more p{
+    font-size: 1.3em;
+    text-align: justify;
+    padding-top: 10px;
+    border: transparent;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    color:rgba(25, 181, 254, 1);
+}
 #moreBlog p{
     color:rgba(25, 181, 254, 1);
     font-size:inherit;
@@ -438,20 +445,7 @@ display: none;
     line-height:normal;
     padding-top: 10px;
 }
-/*
-.spanToggle{
-    display: none;
-}*/
 
-/*
-#blogSec .post .intro::after{
-    content: ' .... Read More...  ';
-    font-weight: bold;
-}*/
-/*
-#blogSec .post:hover .intro::after{
-    content: ' ';
-}*/
 #blogSec .post h3{
     color: rgba(25, 181, 254, 1);
     text-align: center;
@@ -472,6 +466,7 @@ display: none;
     font-family: inherit;
     font-size: 2em;
     border: none;
+    outline: none;
     background-color: transparent;
     color: white;
 }
@@ -489,13 +484,16 @@ display: none;
     margin-bottom: 20px;
 }
 
-#portSec .post .more {
-    opacity: 0;
-    font-size: 0;
-    line-height: 0;
-    padding-top: 10px;
-    transition: background-color ease-in-out 2s, height ease-in-out 2s, opacity ease-in-out .5s;
 
+
+#portSec .container .row .more p{
+    font-size: 1.3em;
+    text-align: justify;
+    padding-top: 10px;
+    border: transparent;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    color:rgba(255,255,255,1);
 }
 
 
@@ -503,18 +501,17 @@ display: none;
     background-color:rgba(34, 34, 34, .2);
     border-radius: 5px;
     margin: 20px;
+    height: 245px;
 }
 
-#portSec .post:hover .more{
-    opacity:1;
-    font-size:1.3em;
-    text-align: justify;
-    line-height:normal;
-    padding-top: 10px;
-}
 
 #portSec .glyphicon-link{
     color: rgba(255, 255, 255, 1);
+}
+
+#portSec .glyphicon-link:hover{
+    font-size: 110%;
+    color: #8b9dc3;
 }
 
 /********************** CONTACT SEC **************/
@@ -590,6 +587,7 @@ display: none;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 60px;
+    margin-left: 50px;
 }
 
 
